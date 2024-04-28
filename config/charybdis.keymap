@@ -95,7 +95,7 @@
             bindings = <&kp>, <&kp>;
 
             label = "HML";
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33>;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34>;
         };
 
         hmr: hmr {
@@ -107,7 +107,8 @@
             bindings = <&kp>, <&kp>;
 
             label = "HMR";
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32>;
+            hold-trigger-on-release;
         };
 
         hmpt: homerow_mods_prefer_tap {
@@ -231,9 +232,10 @@
             // | Media/Play-Pause | Bspc/LC | SPC/Num/RC |                                                       | Ent | Tab |     |
 
             bindings = <
-&lt BLUETOOTH Q  &kp W         &kp F  &blt NAV P  &kp B               &kp J        &kp L        &hml CAPS U         &kp Y         &kp MINUS  &hml LCTRL A  &hml LALT R
-&hml LGUI S      &hml LSHFT T  &kp G  &kp M       &hmr RIGHT_SHIFT N  &hmr RGUI E  &hmr LALT I  &hmr RCTRL O        &hml LSHFT Z  &kp X      &kp C         &kp D
-&kp V            &kp K         &kp H  &kp COMMA   &kp DOT             &kp QMARK    &kp SPACE    &blt NUMBERS SPACE  &blt 5 TAB    &kp RET    &blt 4 BSPC
+  &lt BLUETOOTH Q  &kp W        &kp F        &blt NAV P          &kp B         &kp J    &kp L               &hml CAPS U  &kp Y        &kp MINUS
+  &hml LCTRL A     &hml LALT R  &hml LGUI S  &hml LSHFT T        &kp G         &kp M    &hmr RIGHT_SHIFT N  &hmr RGUI E  &hmr LALT I  &hmr RCTRL O
+  &hml LSHFT Z     &kp X        &kp C        &kp D               &kp V         &kp K    &kp H               &kp COMMA    &kp DOT      &kp QMARK
+                                &kp SPACE    &blt NUMBERS SPACE  &blt 5 TAB    &kp RET  &blt 4 BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -241,9 +243,10 @@
 
         medi_jah {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &tt C_PP MEDIA  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans          &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans          &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans          &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                  &tt C_PP MEDIA  &trans  &trans    &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -257,9 +260,10 @@
             //         |  ,,  | |/&  | //\ |                |    "    |    `    |   ,,   |
 
             bindings = <
-&kp EXCL         &hml LS(LCTRL) AT  &hmpt LS(LALT) LBRC  &hml LS(LCMD) RBRC  &none          &none             &hml RS(RCMD) LT  &hmpt RS(LALT) GT  &hml RS(RCTRL) ASTERISK  &hml LA(N3) HASH  &kp CARET  &hml LCTRL DOLLAR
-&hmpt LALT LPAR  &hml LCMD RPAR     &kp BACKSLASH        &kp AMPS            &hml RCMD EQL  &hmpt LALT MINUS  &hml RCTRL COLON  &kp SEMICOLON      &kp TILDE                &kp GRAVE         &kp LBKT   &kp RBKT
-&none            &none              &kp PLUS             &kp UNDERSCORE      &kp PERCENT    &kp QMARK         &trans            &mt AMPS PIPE      &mt BACKSLASH SLASH      &kp DQT           &kp GRAVE
+  &kp EXCL   &hml LS(LCTRL) AT  &hmpt LS(LALT) LBRC  &hml LS(LCMD) RBRC  &none                  &none     &hml RS(RCMD) LT  &hmpt RS(LALT) GT  &hml RS(RCTRL) ASTERISK  &hml LA(N3) HASH
+  &kp CARET  &hml LCTRL DOLLAR  &hmpt LALT LPAR      &hml LCMD RPAR      &kp BACKSLASH          &kp AMPS  &hml RCMD EQL     &hmpt LALT MINUS   &hml RCTRL COLON         &kp SEMICOLON
+  &kp TILDE  &kp GRAVE          &kp LBKT             &kp RBKT            &none                  &none     &kp PLUS          &kp UNDERSCORE     &kp PERCENT              &kp QMARK
+                                &trans               &mt AMPS PIPE       &mt BACKSLASH SLASH    &kp DQT   &kp GRAVE
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
@@ -273,11 +277,11 @@
             //         |      |     |      |     |      |    .    |    =    |      |
 
             bindings = <
-&kp LS(F5)    &kp LS(F6)   &kp LS(F7)  &kp LS(F8)   &none   &kp NB_BSLH  &kp N7  &kp N8        &kp N9      &kp NB_STAR  &kp LEFT_CONTROL  &kp LALT
-&kp LEFT_GUI  &kp LSHIFT   &none       &kp NB_FSLH  &kp N4  &kp N5       &kp N6  &kp NB_EQUAL  &kp LS(F9)  &kp LS(F10)  &kp LS(F11)       &kp LS(F12)
-&none         &kp NB_PIPE  &kp N1      &kp N2       &kp N3  &kp NB_PLUS  &none   &none         &none       &kp DOT      &kp N0
+  &kp LS(F5)        &kp LS(F6)   &kp LS(F7)    &kp LS(F8)   &none    &kp NB_BSLH  &kp N7  &kp N8  &kp N9  &kp NB_STAR
+  &kp LEFT_CONTROL  &kp LALT     &kp LEFT_GUI  &kp LSHIFT   &none    &kp NB_FSLH  &kp N4  &kp N5  &kp N6  &kp NB_EQUAL
+  &kp LS(F9)        &kp LS(F10)  &kp LS(F11)   &kp LS(F12)  &none    &kp NB_PIPE  &kp N1  &kp N2  &kp N3  &kp NB_PLUS
+                                 &none         &none        &none    &kp DOT      &kp N0
             >;
-
         };
 
         nav {
@@ -288,9 +292,10 @@
             //         |      |     |      |     |      |    PgDN   |   PgUP  |      |
 
             bindings = <
-&none   &bt BT_SEL 0  &bt BT_PRV  &bt BT_NXT  &none            &none         &none     &kp UP     &none     &none      &kp LEFT   &kp DOWN
-&kp UP  &kp RIGHT     &none       &none       &kp RIGHT_SHIFT  &kp LEFT_GUI  &kp RALT  &kp LCTRL  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END
-&none   &none         &kp HOME    &none       &kp END          &none         &none     &none      &none     &none      &none
+  &none     &bt BT_SEL 0  &bt BT_PRV  &bt BT_NXT  &none    &none  &none            &kp UP        &none     &none
+  &kp LEFT  &kp DOWN      &kp UP      &kp RIGHT   &none    &none  &kp RIGHT_SHIFT  &kp LEFT_GUI  &kp RALT  &kp LCTRL
+  &kp HOME  &kp PG_DN     &kp PG_UP   &kp END     &none    &none  &kp HOME         &none         &kp END   &none
+                          &none       &none       &none    &none  &none
             >;
         };
 
@@ -302,9 +307,10 @@
             //         |      |     |      |     |      |           |         |      |
 
             bindings = <
-&kp F5        &kp F6      &kp F7   &kp F8  &none   &none    &kp F7  &kp F8   &kp F9  &kp F12  &kp LCTRL  &kp LEFT_ALT
-&kp LEFT_GUI  &kp LSHIFT  &kp DEL  &none   &kp F4  &kp F5   &kp F6  &kp F11  &kp F9  &kp F10  &kp F11    &kp F12
-&none         &none       &kp F1   &kp F2  &kp F3  &kp F10  &none   &none    &none   &none    &none
+  &kp F5     &kp F6        &kp F7        &kp F8      &none      &none  &kp F7  &kp F8  &kp F9  &kp F12
+  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LSHIFT  &kp DEL    &none  &kp F4  &kp F5  &kp F6  &kp F11
+  &kp F9     &kp F10       &kp F11       &kp F12     &none      &none  &kp F1  &kp F2  &kp F3  &kp F10
+                           &none         &none       &none      &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_DEC C_BRI_INC>;
@@ -318,48 +324,49 @@
             //         | CLR  |     |      |
 
             bindings = <
-&none  &none         &none  &none         &none         &none         &none         &none         &none  &none  &none  &none
-&none  &none         &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &none  &none  &none
-&none  &out OUT_TOG  &none  &none         &none         &none         &none         &bt BT_CLR    &none  &none  &none
+  &none  &none  &none  &none       &none    &none         &none         &none         &none         &none
+  &none  &none  &none  &none       &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+  &none  &none  &none  &none       &none    &out OUT_TOG  &none         &none         &none         &none
+                &none  &bt BT_CLR  &none    &none         &none
             >;
         };
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                  &trans  &trans  &trans    &trans  &trans
             >;
-
         };
 
         click {
             bindings = <
-&trans        &trans      &trans  &trans  &trans           &trans         &trans        &trans     &trans     &trans     &kp LCTRL  &kp LEFT_ALT
-&kp LEFT_GUI  &kp LSHIFT  &trans  &trans  &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp LEFT_ALT  &kp RCTRL  &kp LCTRL  &trans     &kp LALT   &kp LCMD
-&trans        &trans      &trans  &trans  &trans           &trans         &trans        &mkp LCLK  &mkp RCLK  &mkp RCLK  &mkp LCLK
+  &trans     &trans        &trans        &trans      &trans       &trans     &trans           &trans         &trans        &trans
+  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LSHIFT  &trans       &trans     &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp LEFT_ALT  &kp RCTRL
+  &kp LCTRL  &trans        &kp LALT      &kp LCMD    &trans       &trans     &trans           &trans         &trans        &trans
+                           &trans        &mkp LCLK   &mkp RCLK    &mkp RCLK  &mkp LCLK
             >;
-
         };
 
         scrolly_moly {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                  &trans  &trans  &trans    &trans  &trans
             >;
-
         };
 
         // ball point
 
         biro {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                  &trans  &trans  &trans    &trans  &trans
             >;
-
         };
     };
 };
