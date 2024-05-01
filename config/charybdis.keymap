@@ -96,6 +96,7 @@
 
             label = "HML";
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34>;
+            hold-trigger-on-release;
         };
 
         hmr: hmr {
@@ -232,10 +233,10 @@
             // | Media/Play-Pause | Bspc/LC | SPC/Num/RC |                                                       | Ent | Tab |     |
 
             bindings = <
-  &lt BLUETOOTH Q  &kp W        &kp F        &blt NAV P          &kp B         &kp J    &kp L               &hml CAPS U  &kp Y        &kp MINUS
-  &hml LCTRL A     &hml LALT R  &hml LGUI S  &hml LSHFT T        &kp G         &kp M    &hmr RIGHT_SHIFT N  &hmr RGUI E  &hmr LALT I  &hmr RCTRL O
-  &hml LSHFT Z     &kp X        &kp C        &kp D               &kp V         &kp K    &kp H               &kp COMMA    &kp DOT      &kp QMARK
-                                &kp SPACE    &blt NUMBERS SPACE  &blt 5 TAB    &kp RET  &blt 4 BSPC
+  &kp Q         &kp W        &kp F        &kp P               &kp B         &kp J    &kp L               &kp U        &kp Y        &apos_dqt
+  &hml LCTRL A  &hml LALT R  &hml LGUI S  &hml LSHFT T        &kp G         &kp M    &hmr RIGHT_SHIFT N  &hmr RGUI E  &hmr LALT I  &hmr RCTRL O
+  &lt 7 Z       &kp X        &kp C        &kp D               &kp V         &kp K    &kp H               &kp COMMA    &kp DOT      &kp QMARK
+                             &kp SPACE    &blt NUMBERS SPACE  &blt 5 TAB    &kp RET  &blt 4 BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
