@@ -111,19 +111,19 @@
         };
 
         win_curl_l {
-            bindings = <&kp LBRC>;
+            bindings = <&kp WNB_LBRC>;
             key-positions = <2 1>;
             layers = <1>;
         };
 
         win_curl_r {
-            bindings = <&kp NB_RBRC>;
+            bindings = <&kp WNB_RBRC>;
             key-positions = <22 21>;
             layers = <1>;
         };
 
         win_at {
-            bindings = <&kp NB_AT>;
+            bindings = <&kp WNB_AT>;
             key-positions = <2 7>;
             layers = <1>;
         };
@@ -222,6 +222,14 @@
             label = "quotus";
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        apos_dqt_win: quot_doublequot {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp WNB_APOS>, <&kp WNB_DQT>;
+
+            label = "quotus";
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
 
         ques_excl: questionmark_exlamation_mark {
             compatible = "zmk,behavior-mod-morph";
@@ -298,7 +306,7 @@
 
             bindings = <
   &kp Q         &kp W        &kp F        &kp P               &kp B         &kp J    &kp L               &kp U        &kp Y        &apos_dqt
-  &hml LCTRL A  &hml LALT R  &hml LGUI S  &hml LSHFT T        &kp G         &kp M    &hmr RIGHT_SHIFT N  &hmr RGUI E  &hmr LALT I  &hmr RCTRL O
+ &hml LGUI A  &hml LALT R  &hml LCTRL S  &hml LSHFT T        &kp G         &kp M    &hmr RIGHT_SHIFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O
   &lt 7 Z       &kp X        &kp C        &kp D               &kp V         &kp K    &kp H               &kp COMMA    &kp DOT      &kp QMARK
                              &kp SPACE    &blt NUMBERS SPACE  &blt 5 TAB    &kp RET  &blt 4 BSPC
             >;
@@ -314,8 +322,8 @@
             // | Media/Play-Pause | Bspc/LC | SPC/Num/RC |                                                       | Ent | Tab |     |
 
             bindings = <
-  &kp Q         &kp W        &kp F        &kp P               &kp B         &kp J    &kp L               &kp U        &kp Y        &apos_dqt
-  &hml LCTRL A  &hml LALT R  &hml LGUI S  &hml LSHFT T        &kp G         &kp M    &hmr RIGHT_SHIFT N  &hmr RGUI E  &hmr LALT I  &hmr RCTRL O
+  &kp Q         &kp W        &kp F        &kp P               &kp B         &kp J    &kp L               &kp U        &kp Y        &apos_dqt_win
+  &hml LGUI A  &hml LALT R  &hml LCTRL S  &hml LSHFT T        &kp G         &kp M    &hmr RIGHT_SHIFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O
   &lt 7 Z       &kp X        &kp C        &kp D               &kp V         &kp K    &kp H               &kp COMMA    &kp DOT      &kp QMARK
                              &kp SPACE    &blt NUMBERS SPACE  &blt 5 TAB    &kp RET  &blt 4 BSPC
             >;
@@ -364,7 +372,7 @@
 
             bindings = <
   &none     &bt BT_SEL 0  &bt BT_PRV  &bt BT_NXT  &none    &none  &none            &kp UP        &none     &none
-  &kp LEFT  &kp DOWN      &kp UP      &kp RIGHT   &none    &none  &kp RIGHT_SHIFT  &kp LEFT_GUI  &kp RALT  &kp LCTRL
+  &kp LEFT  &kp DOWN      &kp UP      &kp RIGHT   &none    &none  &kp RIGHT_SHIFT  &kp LCTRL  &kp RALT  &kp LGUI
   &kp HOME  &kp PG_DN     &kp PG_UP   &kp END     &none    &none  &kp HOME         &none         &kp END   &none
                           &none       &none       &none    &none  &none
             >;
@@ -379,7 +387,7 @@
 
             bindings = <
   &kp F5     &kp F6        &kp F7        &kp F8      &none      &none  &kp F7  &kp F8  &kp F9  &kp F12
-  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LSHIFT  &kp DEL    &none  &kp F4  &kp F5  &kp F6  &kp F11
+  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &kp DEL    &none  &kp F4  &kp F5  &kp F6  &kp F11
   &kp F9     &kp F10       &kp F11       &kp F12     &none      &none  &kp F1  &kp F2  &kp F3  &kp F10
                            &none         &none       &none      &none  &none
             >;
@@ -414,7 +422,7 @@
         click {
             bindings = <
   &trans     &trans        &trans        &trans      &trans       &trans     &trans           &trans         &trans        &trans
-  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LSHIFT  &trans       &trans     &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp LEFT_ALT  &kp RCTRL
+  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans       &trans     &kp RIGHT_SHIFT  &kp RCTRL  &kp LALT  &kp RGUI
   &kp LCTRL  &trans        &kp LALT      &kp LCMD    &trans       &trans     &trans           &trans         &trans        &trans
                            &trans        &mkp LCLK   &mkp RCLK    &mkp RCLK  &mkp LCLK
             >;
