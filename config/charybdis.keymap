@@ -109,6 +109,24 @@
             bindings = <&kp NB_HASH>;
             key-positions = <23 26>;
         };
+
+        win_curl_l {
+            bindings = <&kp LBRC>;
+            key-positions = <2 1>;
+            layers = <1>;
+        };
+
+        win_curl_r {
+            bindings = <&kp NB_RBRC>;
+            key-positions = <22 21>;
+            layers = <1>;
+        };
+
+        win_at {
+            bindings = <&kp NB_AT>;
+            key-positions = <2 7>;
+            layers = <1>;
+        };
     };
 };
 
