@@ -244,7 +244,7 @@
             #binding-cells = <0>;
             bindings = <&kp WNB_APOS>, <&kp WNB_DQT>;
 
-            label = "quotus";
+            label = "quotus_win";
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
