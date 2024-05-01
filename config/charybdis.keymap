@@ -222,7 +222,7 @@
             label = "quotus";
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        apos_dqt_win: quot_doublequot {
+        apos_dqt_win: quot_doublequot_win {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp WNB_APOS>, <&kp WNB_DQT>;
