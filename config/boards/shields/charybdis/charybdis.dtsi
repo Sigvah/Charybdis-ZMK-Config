@@ -55,13 +55,13 @@
         a-gpios = <&pro_micro_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <4>;
-        // steps = <60>;
+        steps = <80>;
         status = "disabled";
     };
 
     sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder>;
-        // triggers_per_rotation = <30>;
+        // triggers_per_rotation = <20>;
     };
 };
