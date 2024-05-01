@@ -83,27 +83,27 @@
         };
 
         amp_combo {
-            bindings = <&kp AMPS>;
+            bindings = <&kp NB_AMPS>;
             key-positions = <13 16>;
         };
 
         grave_combo {
-            bindings = <&kp GRAVE>;
+            bindings = <&kp NB_GRAVE>;
             key-positions = <1 8>;
         };
 
         dollar_combo {
-            bindings = <&kp DLLR>;
+            bindings = <&kp NB_DLLR>;
             key-positions = <12 17>;
         };
 
         percent_combo {
-            bindings = <&kp PRCNT>;
+            bindings = <&kp NB_PRCNT>;
             key-positions = <16 7>;
         };
 
         hash_combo {
-            bindings = <&kp HASH>;
+            bindings = <&kp NB_HASH>;
             key-positions = <23 26>;
         };
     };
@@ -214,7 +214,7 @@
         par_square_l: par_square_l {
             compatible = "zmk,behavior-mod-morph";
             label = "PAR_SQUARE_L";
-            bindings = <&kp LPAR>, <&kp LBKT>;
+            bindings = <&kp NB_LPAR>, <&kp NB_LBKT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -223,7 +223,7 @@
         par_square_r: par_square_r {
             compatible = "zmk,behavior-mod-morph";
             label = "PAR_SQUARE_R";
-            bindings = <&kp RPAR>, <&kp RBKT>;
+            bindings = <&kp NB_RPAR>, <&kp NB_RBKT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
