@@ -157,7 +157,7 @@
             bindings = <&kp>, <&kp>;
 
             label = "HML";
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34>;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34 31 32>;
             hold-trigger-on-release;
         };
 
@@ -170,7 +170,7 @@
             bindings = <&kp>, <&kp>;
 
             label = "HMR";
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32>;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 34 33>;
             hold-trigger-on-release;
         };
 
@@ -273,6 +273,25 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
+        };
+
+        shift_space: shift_space {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SHIFT_SPACE";
+            bindings = <&kp SPACE>, <&kp ESC>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
+
+        back_del: back_del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACK_DEL";
+            bindings = <&kp BACKSPACE>, <&kp DEL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
         };
     };
 
