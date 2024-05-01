@@ -56,13 +56,13 @@
         };
 
         combo_lpar {
-            bindings = <&kp NB_LPAR>;
-            key-positions = <22 21>;
+            bindings = <&par_square_l>;
+            key-positions = <7 8>;
         };
 
         combo_rpara {
-            bindings = <&kp NB_RPAR>;
-            key-positions = <7 8>;
+            bindings = <&par_square_r>;
+            key-positions = <27 28>;
         };
 
         combo-lcurl {
@@ -72,12 +72,12 @@
 
         combo_rcurl {
             bindings = <&kp NB_RBRC>;
-            key-positions = <27 28>;
+            key-positions = <22 21>;
         };
 
         combo_at {
             bindings = <&kp NB_AT>;
-            key-positions = <3 8>;
+            key-positions = <2 7>;
         };
 
         caps_word_combo {
@@ -287,6 +287,7 @@
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
+
         win {
             // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
             //  '    |  ,  |  .  |  P/Nav  |  Y  |                             |  F/Fn  |  G  |  C/Caps  |    R    |  L   |
