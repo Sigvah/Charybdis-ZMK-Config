@@ -452,7 +452,7 @@
             bindings = <
   &trans  &trans  &trans  &trans     &trans       &trans  &trans  &trans  &trans  &trans
   &trans  &trans  &trans  &trans     &trans       &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans     &trans       &trans  &trans  &trans  &trans  &trans
+  &trans  &mo 9   &trans  &trans     &trans       &trans  &trans  &trans  &mo 9   &trans
                           &mkp LCLK  &mkp RCLK    &trans  &trans
             >;
         };
