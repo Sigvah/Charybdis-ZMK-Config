@@ -295,31 +295,6 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        nav_ball_scroll {
-            if-layers = <MOUSE NAV>;
-            then-layer = <BIRO>;
-        };
-
-        num_ball_scroll {
-            if-layers = <MOUSE SYMBOLS>;
-            then-layer = <SCRL>;
-        };
-    };
-
-    macros {
-        vi_editing_mode: vi_editing_mode {
-            label = "vi editing-mode";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp S &kp E &kp T &kp SPACE &kp MINUS &kp O &kp SPACE &kp V &kp I &kp RET>;
-        };
-    };
-
     combos {
         compatible = "zmk,combos";
 
