@@ -143,36 +143,6 @@
             key-positions = <13 2>;
             layers = <1>;
         };
-
-        lclickr {
-            bindings = <&mkp LCLK>;
-            key-positions = <16 26>;
-        };
-
-        lclickl {
-            bindings = <&mkp LCLK>;
-            key-positions = <13 23>;
-        };
-
-        rclckr {
-            bindings = <&mkp RCLK>;
-            key-positions = <17 27>;
-        };
-
-        rclckl {
-            bindings = <&mkp RCLK>;
-            key-positions = <12 22>;
-        };
-
-        drgscrl_l {
-            bindings = <&mo 9>;
-            key-positions = <11 21>;
-        };
-
-        drgscrl_r {
-            bindings = <&mo 9>;
-            key-positions = <18 28>;
-        };
     };
 };
 
@@ -325,15 +295,6 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        combo_vi_editing_mode {
-            timeout-ms = <50>;
-            key-positions = <27 28>;
-            bindings = <&vi_editing_mode>;
-        };
-    };
 
     keymap {
         compatible = "zmk,keymap";
