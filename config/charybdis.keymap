@@ -134,15 +134,48 @@
 
         tilde_mac {
             bindings = <&kp TILDE>;
-            key-positions = <13 2>;
-            layers = <0>;
+            key-positions = <7 17>;
         };
 
         tilde_win {
             bindings = <&kp TILDE>;
-            key-positions = <13 2>;
+            key-positions = <7 17>;
             layers = <1>;
         };
+
+        bslh_mac {
+            bindings = <&kp BSLH>;
+            key-positions = <8 18>;
+        };
+
+        bslh_win {
+            bindings = <&kp BSLH>;
+            key-positions = <8 18>;
+            layers = <1>;
+        };
+
+        fslh_combo {
+            bindings = <&kp FSLH>;
+            key-positions = <6 16>;
+        };
+
+        dollar_win {
+            bindings = <&kp NB_DLLR>;
+            key-positions = <12 17>;
+            layers = <0>;
+        };
+
+        pnd_mac {
+            bindings = <&kp A>;
+            key-positions = <3 6>;
+        };
+
+        pnd_win {
+            bindings = <&kp A>;
+            key-positions = <3 6>;
+            layers = <1>;
+        };
+    };
     };
 };
 
