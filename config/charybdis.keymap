@@ -175,6 +175,11 @@
             key-positions = <3 6>;
             layers = <1>;
         };
+
+        win_def {
+            bindings = <&tog 1>;
+            key-positions = <30 33>;
+        };
     };
 };
 
@@ -326,7 +331,6 @@
             keep-mods = <(MOD_RSFT)>;
         };
     };
-
 
     keymap {
         compatible = "zmk,keymap";
