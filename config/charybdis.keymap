@@ -66,13 +66,13 @@
         };
 
         combo-lcurl {
-            bindings = <&kp curl_great_l>;
+            bindings = <&curl_great_l>;
             key-positions = <2 1>;
             layers = <0>;
         };
 
         combo_rcurl {
-            bindings = <&kp curl_less_r>;
+            bindings = <&curl_less_r>;
             key-positions = <22 21>;
             layers = <0>;
         };
