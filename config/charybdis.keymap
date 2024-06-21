@@ -132,14 +132,14 @@
             layers = <1>;
         };
 
-        tilde_mac {
-            bindings = <&kp NB_TILDE>;
+        pipe_mac {
+            bindings = <&kp NB_PIPE>;
             key-positions = <7 17>;
             layers = <0>;
         };
 
-        tilde_win {
-            bindings = <&kp WNB_TILDE>;
+        pipe_win {
+            bindings = <&kp WNB_PIPE>;
             key-positions = <7 17>;
             layers = <1>;
         };
