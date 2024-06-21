@@ -66,13 +66,13 @@
         };
 
         combo-lcurl {
-            bindings = <&kp NB_LBRC>;
+            bindings = <&kp curl_great_l>;
             key-positions = <2 1>;
             layers = <0>;
         };
 
         combo_rcurl {
-            bindings = <&kp NB_RBRC>;
+            bindings = <&kp curl_less_r>;
             key-positions = <22 21>;
             layers = <0>;
         };
@@ -85,7 +85,7 @@
 
         caps_word_combo {
             bindings = <&caps_word>;
-            key-positions = <12 17>;
+            key-positions = <11 18>;
         };
 
         amp_combo {
@@ -274,7 +274,7 @@
         apos_dqt: quot_doublequot {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp NB_APOS>, <&kp NB_DQT>;
+            bindings = <&kp NB_SINGLE_QUOTE>, <&kp NB_DQT>;
 
             label = "quotus";
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -311,6 +311,23 @@
             compatible = "zmk,behavior-mod-morph";
             label = "PAR_SQUARE_R";
             bindings = <&kp NB_RPAR>, <&kp NB_RBKT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+        curl_great_l: par_square_l {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PAR_SQUARE_L";
+            bindings = <&kp NB_LBRC>, <&kp NB_GT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        curl_less_r: par_square_r {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PAR_SQUARE_R";
+            bindings = <&kp NB_RBRC>, <&kp NB_LT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
