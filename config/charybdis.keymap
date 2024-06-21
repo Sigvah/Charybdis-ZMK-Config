@@ -133,45 +133,49 @@
         };
 
         tilde_mac {
-            bindings = <&kp TILDE>;
+            bindings = <&kp NB_TILDE>;
             key-positions = <7 17>;
+            layers = <0>;
         };
 
         tilde_win {
-            bindings = <&kp TILDE>;
+            bindings = <&kp WNB_TILDE>;
             key-positions = <7 17>;
             layers = <1>;
         };
 
         bslh_mac {
-            bindings = <&kp BSLH>;
+            bindings = <&kp NB_BSLH>;
             key-positions = <8 18>;
+            layers = <0>;
         };
 
         bslh_win {
-            bindings = <&kp BSLH>;
+            bindings = <&kp WNB_BSLH>;
             key-positions = <8 18>;
             layers = <1>;
         };
 
         fslh_combo {
-            bindings = <&kp FSLH>;
+            bindings = <&kp NB_FSLH>;
             key-positions = <6 16>;
+            //global
         };
 
         dollar_win {
-            bindings = <&kp NB_DLLR>;
+            bindings = <&kp WNB_DLLR>;
             key-positions = <12 17>;
-            layers = <0>;
+            layers = <1>;
         };
 
         pnd_mac {
-            bindings = <&kp A>;
+            bindings = <&kp NB_POUND_SIGN>;
             key-positions = <3 6>;
+            layers = <0>;
         };
 
         pnd_win {
-            bindings = <&kp A>;
+            bindings = <&kp WNB_POUND_SIGN>;
             key-positions = <3 6>;
             layers = <1>;
         };
