@@ -315,18 +315,18 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
-        curl_great_l: par_square_l {
+        curl_great_l: curl_great_l {
             compatible = "zmk,behavior-mod-morph";
-            label = "PAR_SQUARE_L";
+            label = "CURL_GREAT";
             bindings = <&kp NB_LBRC>, <&kp NB_GT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
 
-        curl_less_r: par_square_r {
+        curl_less_r: curl_less_r {
             compatible = "zmk,behavior-mod-morph";
-            label = "PAR_SQUARE_R";
+            label = "CURL_LESS";
             bindings = <&kp NB_RBRC>, <&kp NB_LT>;
 
             #binding-cells = <0>;
