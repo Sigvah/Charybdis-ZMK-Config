@@ -21,7 +21,7 @@
 
 #define TT 160
 
-&caps_word { continue-list = <NB_UNDERSCORE NB_MINUS WNB_UNDERSCORE WNB_MINUS>; };
+&caps_word { continue-list = <NB_UNDERSCORE NB_MINUS WNB_UNDERSCORE WNB_MINUS BACKSPACE DEL>; };
 
 / {
     chosen { zmk,matrix_transform = &five_column_transform; };
@@ -425,8 +425,8 @@
             bindings = <
   &kp Q        &kp W        &kp F         &kp P               &kp B         &kp J    &kp L               &kp U         &kp Y        &apos_dqt
   &hml LGUI A  &hml LALT R  &hml LCTRL S  &hml LSHFT T        &kp G         &kp M    &hmr RIGHT_SHIFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O
-  &lt 7 Z      &kp X        &kp C         &kp D               &kp V         &kp K    &kp H               &kp COMMA     &kp DOT      &kp QMARK
-                                          &blt NUMBERS SPACE  &blt 5 TAB    &kp RET  &blt 4 BSPC
+  &lt 7 Z      &kp X        &kp C         &kp D               &kp V         &kp K    &kp H               &kp COMMA     &kp DOT      &kp NB_MINUS
+                                          &lt_spcesc  &blt 5 TAB    &kp RET  &lt_bspc
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -442,8 +442,8 @@
             bindings = <
   &kp Q        &kp W        &kp F         &kp P               &kp B         &kp J    &kp L               &kp U         &kp Y        &apos_dqt_win
   &hml LGUI A  &hml LALT R  &hml LCTRL S  &hml LSHFT T        &kp G         &kp M    &hmr RIGHT_SHIFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O
-  &lt 7 Z      &kp X        &kp C         &kp D               &kp V         &kp K    &kp H               &kp COMMA     &kp DOT      &kp QMARK
-                                          &blt NUMBERS SPACE  &blt 5 TAB    &kp RET  &blt 4 BSPC
+  &lt 7 Z      &kp X        &kp C         &kp D               &kp V         &kp K    &kp H               &kp COMMA     &kp DOT      &kp NB_MINUS
+                                          &lt_spcesc  &blt 5 TAB    &kp RET  &lt_bspc
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -489,7 +489,7 @@
             //         |      |     |      |     |      |    PgDN   |   PgUP  |      |
 
             bindings = <
-  &none     &bt BT_SEL 0  &bt BT_PRV  &bt BT_NXT  &none     &none  &none            &kp UP     &none     &none
+  &none     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none     &none  &none            &kp UP     &none     &none
   &kp LEFT  &kp DOWN      &kp UP      &kp RIGHT   &tog 4    &none  &kp RIGHT_SHIFT  &kp LCTRL  &kp RALT  &kp LGUI
   &kp HOME  &kp PG_DN     &kp PG_UP   &kp END     &none     &none  &kp HOME         &none      &kp END   &none
                                       &trans      &trans    &none  &none
