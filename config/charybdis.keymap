@@ -309,7 +309,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "PARAS";
             bindings = <&kp NB_LPAR>, <&kp NB_RPAR>;
-            
+
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
@@ -370,7 +370,7 @@
             bindings = <
   &kp Q        &kp W        &kp F         &kp P               &kp B         &kp J    &kp L               &kp U         &kp Y        &apos_dqt
   &hml LGUI A  &hml LALT R  &hml LCTRL S  &hml LSHFT T        &kp G         &kp M    &hmr RIGHT_SHIFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O
-  &lt 7 Z      &kp X        &kp C         &kp D               &kp V         &kp K    &kp H               &kp COMMA     &kp DOT      &kp QMARK
+  &lt 7 Z      &kp X        &kp C         &kp D               &kp V         &kp K    &kp H               &kp COMMA     &kp DOT      &kp NB_MINUS
                                           &blt NUMBERS SPACE  &blt 5 TAB    &kp RET  &blt 4 BSPC
             >;
 
