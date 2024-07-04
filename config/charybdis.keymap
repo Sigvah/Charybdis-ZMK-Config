@@ -80,13 +80,13 @@
         combo_crocs {
             bindings = <&kp NB_LT>;
             key-positions = <22 21>;
-            layers = <0>
+            layers = <0>;
         };
 
         combo_crocs_win {
             bindings = <&kp WNB_LT>;
             key-positions = <22 21>;
-            layers = <0>
+            layers = <0>;
         };
 
         combo_at {
