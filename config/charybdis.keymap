@@ -21,7 +21,7 @@
 
 #define TT 160
 
-&caps_word { continue-list = <NB_UNDERSCORE NB_MINUS WNB_UNDERSCORE WNB_MINUS>; };
+&caps_word { continue-list = <NB_UNDERSCORE NB_MINUS WNB_UNDERSCORE WNB_MINUS BACKSPACE DEL>; };
 
 / {
     chosen { zmk,matrix_transform = &five_column_transform; };
@@ -64,6 +64,9 @@
             bindings = <&par_square_r>;
             key-positions = <27 28>;
         };
+        combo_para {
+            bindings = <&kp 
+        }
 
         combo-lcurl {
             bindings = <&curl_great_l>;
@@ -306,7 +309,11 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
-
+        paras: paras {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PARAS"
+            bindings = <&kp NB_LPAR>, <&kp NB_RPAR>
+        }
         par_square_r: par_square_r {
             compatible = "zmk,behavior-mod-morph";
             label = "PAR_SQUARE_R";
