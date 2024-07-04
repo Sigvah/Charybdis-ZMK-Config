@@ -151,7 +151,7 @@
 
         bslh_mac {
             bindings = <&kp NB_BSLH>;
-            key-positions = <8 18>; 
+            key-positions = <8 18>;
             layers = <0>;
         };
 
@@ -164,6 +164,7 @@
         fslh_combo {
             bindings = <&kp NB_FSLH>;
             key-positions = <6 16>;
+
             //global
         };
 
@@ -188,6 +189,21 @@
         win_def {
             bindings = <&tog 1>;
             key-positions = <30 33>;
+        };
+
+        btn1_r {
+            bindings = <&mkp MB1>;
+            key-positions = <16 26>;
+        };
+
+        mb2_r {
+            bindings = <&mkp MB2>;
+            key-positions = <17 27>;
+        };
+
+        scrl_r {
+            bindings = <&mo 9>;
+            key-positions = <18 28>;
         };
     };
 };
@@ -277,19 +293,22 @@
         };
 
         lt_bspc: layer_tap_bspc_del {
-    compatible = "zmk,behavior-hold-tap";
-    label = "LAYER_TAP_BACKSPACE_DELETE";
-    #binding-cells = <2>;
-    bindings = <&mo>, <&back_del>;
-    tapping-term-ms = <200>;
-};
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_BACKSPACE_DELETE";
+            #binding-cells = <2>;
+            bindings = <&mo>, <&back_del>;
+
+            tapping-term-ms = <200>;
+        };
+
         lt_spcesc: layer_tap_space_esc {
-    compatible = "zmk,behavior-hold-tap";
-    label = "LAYER_TAP_SPACE_ESC";
-    #binding-cells = <2>;
-    bindings = <&mo>, <&spc_esc>;
-    tapping-term-ms = <200>;
-};
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_SPACE_ESC";
+            #binding-cells = <2>;
+            bindings = <&mo>, <&spc_esc>;
+
+            tapping-term-ms = <200>;
+        };
 
         apos_dqt: quot_doublequot {
             compatible = "zmk,behavior-mod-morph";
@@ -335,6 +354,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
         curles: curles {
             compatible = "zmk,behavior-mod-morph";
             label = "CURLES";
