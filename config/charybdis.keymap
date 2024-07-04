@@ -307,8 +307,8 @@
         };
         paras: paras {
             compatible = "zmk,behavior-mod-morph";
-            label = "PARAS"
-            bindings = <&kp NB_LPAR>, <&kp NB_RPAR>
+            label = "PARAS";
+            bindings = <&kp NB_LPAR>, <&kp NB_RPAR>;
         }
         par_square_r: par_square_r {
             compatible = "zmk,behavior-mod-morph";
@@ -373,7 +373,6 @@
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
-
         win {
             // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
             //  '    |  ,  |  .  |  P/Nav  |  Y  |                             |  F/Fn  |  G  |  C/Caps  |    R    |  L   |
