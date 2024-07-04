@@ -34,7 +34,7 @@
         combo_ques {
             timeout-ms = <35>;
             key-positions = <7 6>;
-            bindings = <&ques_excl>;z 
+            bindings = <&ques_excl>;
         };
 
         aa {
@@ -62,7 +62,6 @@
         combo_para {
             bindings = <&paras>;
             key-positions = <7 8>;
-            
         }
 
         combo-lcurl {
