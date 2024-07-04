@@ -21,7 +21,7 @@
 
 #define TT 160
 
-&caps_word { continue-list = <NB_UNDERSCORE NB_MINUS WNB_UNDERSCORE WNB_MINUS BACKSPACE DEL>; };
+&caps_word { continue-list = <NB_UNDERSCORE NB_MINUS WNB_UNDERSCORE WNB_MINUS>; };
 
 / {
     chosen { zmk,matrix_transform = &five_column_transform; };
@@ -55,13 +55,14 @@
             key-positions = <23 22>;
         };
 
+        combo_lpar {
+            bindings = <&par_square_l>;
+            key-positions = <7 8>;
+        };
+
         combo_rpara {
             bindings = <&par_square_r>;
             key-positions = <27 28>;
-        };
-        combo_para {
-            bindings = <&paras>;
-            key-positions = <7 8>;
         };
 
         combo-lcurl {
@@ -305,14 +306,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
-        paras: paras {
-            compatible = "zmk,behavior-mod-morph";
-            label = "PARAS";
-            bindings = <&kp NB_LPAR>, <&kp NB_RPAR>;
 
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
         par_square_r: par_square_r {
             compatible = "zmk,behavior-mod-morph";
             label = "PAR_SQUARE_R";
@@ -358,6 +352,8 @@
             keep-mods = <(MOD_RSFT)>;
         };
     };
+
+    keymap {
         compatible = "zmk,keymap";
 
         default {
@@ -370,12 +366,13 @@
             bindings = <
   &kp Q        &kp W        &kp F         &kp P               &kp B         &kp J    &kp L               &kp U         &kp Y        &apos_dqt
   &hml LGUI A  &hml LALT R  &hml LCTRL S  &hml LSHFT T        &kp G         &kp M    &hmr RIGHT_SHIFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O
-  &lt 7 Z      &kp X        &kp C         &kp D               &kp V         &kp K    &kp H               &kp COMMA     &kp DOT      &kp NB_MINUS
+  &lt 7 Z      &kp X        &kp C         &kp D               &kp V         &kp K    &kp H               &kp COMMA     &kp DOT      &kp QMARK
                                           &blt NUMBERS SPACE  &blt 5 TAB    &kp RET  &blt 4 BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
+
         win {
             // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
             //  '    |  ,  |  .  |  P/Nav  |  Y  |                             |  F/Fn  |  G  |  C/Caps  |    R    |  L   |
@@ -512,3 +509,4 @@
             >;
         };
     };
+};
