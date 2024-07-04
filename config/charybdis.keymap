@@ -309,6 +309,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "PARAS";
             bindings = <&kp NB_LPAR>, <&kp NB_RPAR>;
+            
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
@@ -357,7 +358,6 @@
             keep-mods = <(MOD_RSFT)>;
         };
     };
-};
         compatible = "zmk,keymap";
 
         default {
