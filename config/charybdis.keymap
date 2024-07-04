@@ -309,6 +309,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "PARAS";
             bindings = <&kp NB_LPAR>, <&kp NB_RPAR>;
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
         par_square_r: par_square_r {
             compatible = "zmk,behavior-mod-morph";
