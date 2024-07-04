@@ -75,7 +75,7 @@
             bindings = <&curles_win>;
             key-positions = <2 1>;
             layers = <1>;
-        }
+        };
 
         combo_crocs {
             bindings = <&kp NB_LT>;
