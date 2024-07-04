@@ -55,26 +55,31 @@
             key-positions = <23 22>;
         };
 
-        combo_lpar {
+        combo_paras {
             bindings = <&paras>;
             key-positions = <7 8>;
         };
 
-        combo_rpara {
+        combo_squares {
             bindings = <&squares>;
             key-positions = <27 28>;
         };
 
-        combo-lcurl {
+        combo-curles {
             bindings = <&curles>;
             key-positions = <2 1>;
             layers = <0>;
         };
 
-        combo_rcurl {
-            bindings = <&crocs>;
+        combo-curles_win {
+            bindings = <&curles>;
+            key-positions = <2 1>;
+            layers = <1>;
+        };
+
+        combo_crocs {
+            bindings = <&kp NB_LT>;
             key-positions = <22 21>;
-            layers = <0>;
         };
 
         combo_at {
@@ -319,6 +324,15 @@
             compatible = "zmk,behavior-mod-morph";
             label = "CURLES";
             bindings = <&kp NB_LBRC>, <&kp NB_RBRC>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
+
+        curles_win: curles_win {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CURLES_WIN";
+            bindings = <&kp WNB_LBRC>, <&kp WNB_RBRC>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
