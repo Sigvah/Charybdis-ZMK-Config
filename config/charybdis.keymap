@@ -56,23 +56,23 @@
         };
 
         combo_lpar {
-            bindings = <&par_square_l>;
+            bindings = <&paras>;
             key-positions = <7 8>;
         };
 
         combo_rpara {
-            bindings = <&par_square_r>;
+            bindings = <&squares>;
             key-positions = <27 28>;
         };
 
         combo-lcurl {
-            bindings = <&curl_great_l>;
+            bindings = <&curles>;
             key-positions = <2 1>;
             layers = <0>;
         };
 
         combo_rcurl {
-            bindings = <&curl_less_r>;
+            bindings = <&crocs>;
             key-positions = <22 21>;
             layers = <0>;
         };
@@ -298,36 +298,36 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        par_square_l: par_square_l {
+        paras: paras {
             compatible = "zmk,behavior-mod-morph";
-            label = "PAR_SQUARE_L";
-            bindings = <&kp NB_LPAR>, <&kp NB_LBKT>;
+            label = "PARAS";
+            bindings = <&kp NB_LPAR>, <&kp NB_RPAR>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
 
-        par_square_r: par_square_r {
+        squares: squares {
             compatible = "zmk,behavior-mod-morph";
-            label = "PAR_SQUARE_R";
-            bindings = <&kp NB_RPAR>, <&kp NB_RBKT>;
+            label = "SQUARES";
+            bindings = <&kp NB_LBKT>, <&kp NB_RBKT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
-        curl_great_l: curl_great_l {
+        curles: curles {
             compatible = "zmk,behavior-mod-morph";
-            label = "CURL_GREAT";
-            bindings = <&kp NB_LBRC>, <&kp NB_GT>;
+            label = "CURLES";
+            bindings = <&kp NB_LBRC>, <&kp NB_RBRC>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
         };
 
-        curl_less_r: curl_less_r {
+        crocs: crocs {
             compatible = "zmk,behavior-mod-morph";
-            label = "CURL_LESS";
-            bindings = <&kp NB_RBRC>, <&kp NB_LT>;
+            label = "CROCS";
+            bindings = <&kp NB_GT>, <&kp NB_LT>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
