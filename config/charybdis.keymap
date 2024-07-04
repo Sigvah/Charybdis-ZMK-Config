@@ -146,7 +146,7 @@
 
         bslh_mac {
             bindings = <&kp NB_BSLH>;
-            key-positions = <8 18>;
+            key-positions = <8 18>; 
             layers = <0>;
         };
 
@@ -321,7 +321,7 @@
             bindings = <&kp NB_LBRC>, <&kp NB_GT>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_RSFT)>;
         };
 
         curl_less_r: curl_less_r {
@@ -330,7 +330,7 @@
             bindings = <&kp NB_RBRC>, <&kp NB_LT>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_RSFT)>;
         };
 
         shift_space: shift_space {
