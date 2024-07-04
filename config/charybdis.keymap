@@ -217,8 +217,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
             bindings = <&kp>, <&kp>;
-
-            label = "HML";
+        
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34 31 32>;
             hold-trigger-on-release;
         };
@@ -230,15 +229,13 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
             bindings = <&kp>, <&kp>;
-
-            label = "HMR";
+        
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 34 33>;
             hold-trigger-on-release;
         };
 
         hmpt: homerow_mods_prefer_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_PREFER_TAP";
+            compatible = "zmk,behavior-hold-tap";        
             #binding-cells = <2>;
             tapping-term-ms = <TT>;
             quick-tap-ms = <0>;
@@ -247,8 +244,7 @@
         };
 
         blt: balanced_layer_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "BALANCED_LAYER_TAP";
+            compatible = "zmk,behavior-hold-tap";        
             #binding-cells = <2>;
             tapping-term-ms = <TT>;
             quick-tap-ms = <0>;
@@ -257,8 +253,7 @@
         };
 
         tt: toggle_layer_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TOGGLE_LAYER_TAP";
+            compatible = "zmk,behavior-hold-tap";        
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             flavor = "tap-preferred";
@@ -266,15 +261,13 @@
         };
 
         repeat_encoder: repeat_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "REPEAT_ENCODER";
+            compatible = "zmk,behavior-sensor-rotate";        
             #sensor-binding-cells = <0>;
             bindings = <&kp BSPC>, <&key_repeat>;
         };
 
         tsl: behavior_trackball_scroll {
-            compatible = "zmk,behavior-point-device-incremental";
-            label = "TRACKBALL_SCROLL";
+            compatible = "zmk,behavior-point-device-incremental";        
             #trackball-binding-cells = <0>;
             mode = "scroll-mode";
             flavor = "default";
@@ -284,8 +277,7 @@
         };
 
         tkp_fast: behavior_trackball_key_press {
-            compatible = "zmk,behavior-point-device-directional";
-            label = "TRACKBALL_KEY_PRESS";
+            compatible = "zmk,behavior-point-device-directional";        
             #trackball-binding-cells = <4>;
             mode = "distance-mode";
             flavor = "2-dim";
@@ -293,8 +285,7 @@
         };
 
         lt_bspc: layer_tap_bspc_del {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_BACKSPACE_DELETE";
+            compatible = "zmk,behavior-hold-tap";        
             #binding-cells = <2>;
             bindings = <&mo>, <&back_del>;
 
@@ -302,8 +293,7 @@
         };
 
         lt_spcesc: layer_tap_space_esc {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_SPACE_ESC";
+            compatible = "zmk,behavior-hold-tap";        
             #binding-cells = <2>;
             bindings = <&mo>, <&spc_esc>;
 
@@ -314,8 +304,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp NB_SINGLE_QUOTE>, <&kp NB_DQT>;
-
-            label = "quotus";
+        
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -323,8 +312,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp WNB_APOS>, <&kp WNB_DQT>;
-
-            label = "quotus_win";
+        
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -332,14 +320,12 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp NB_QMARK>, <&kp NB_EXCL>;
-
-            label = "questus";
+        
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         paras: paras {
-            compatible = "zmk,behavior-mod-morph";
-            label = "PARAS";
+            compatible = "zmk,behavior-mod-morph";        
             bindings = <&kp NB_LPAR>, <&kp NB_RPAR>;
 
             #binding-cells = <0>;
@@ -347,8 +333,7 @@
         };
 
         squares: squares {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SQUARES";
+            compatible = "zmk,behavior-mod-morph";        
             bindings = <&kp NB_LBKT>, <&kp NB_RBKT>;
 
             #binding-cells = <0>;
@@ -356,8 +341,7 @@
         };
 
         curles: curles {
-            compatible = "zmk,behavior-mod-morph";
-            label = "CURLES";
+            compatible = "zmk,behavior-mod-morph";        
             bindings = <&kp NB_LBRC>, <&kp NB_RBRC>;
 
             #binding-cells = <0>;
@@ -365,8 +349,7 @@
         };
 
         curles_win: curles_win {
-            compatible = "zmk,behavior-mod-morph";
-            label = "CURLES_WIN";
+            compatible = "zmk,behavior-mod-morph";        
             bindings = <&kp WNB_LBRC>, <&kp WNB_RBRC>;
 
             #binding-cells = <0>;
@@ -374,8 +357,7 @@
         };
 
         crocs: crocs {
-            compatible = "zmk,behavior-mod-morph";
-            label = "CROCS";
+            compatible = "zmk,behavior-mod-morph";        
             bindings = <&kp NB_GT>, <&kp NB_LT>;
 
             #binding-cells = <0>;
@@ -383,8 +365,7 @@
         };
 
         shift_space: shift_space {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SHIFT_SPACE";
+            compatible = "zmk,behavior-mod-morph";        
             bindings = <&kp SPACE>, <&kp ESC>;
 
             #binding-cells = <0>;
@@ -392,8 +373,7 @@
         };
 
         back_del: back_del {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BACK_DEL";
+            compatible = "zmk,behavior-mod-morph";        
             bindings = <&kp BACKSPACE>, <&kp DEL>;
 
             #binding-cells = <0>;
@@ -402,8 +382,7 @@
         };
 
         spc_esc: spc_esc {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SPC_DEL";
+            compatible = "zmk,behavior-mod-morph";        
             bindings = <&kp SPACE>, <&kp ESC>;
 
             #binding-cells = <0>;
