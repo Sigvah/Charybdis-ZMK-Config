@@ -276,6 +276,21 @@
             step_size = <50>;
         };
 
+        lt_bspc: layer_tap_bspc_del {
+    compatible = "zmk,behavior-hold-tap";
+    label = "LAYER_TAP_BACKSPACE_DELETE";
+    #binding-cells = <2>;
+    bindings = <&mo>, <&back_del>;
+    tapping-term-ms = <200>;
+};
+        lt_spcesc: layer_tap_space_esc {
+    compatible = "zmk,behavior-hold-tap";
+    label = "LAYER_TAP_SPACE_ESC";
+    #binding-cells = <2>;
+    bindings = <&mo>, <&spc_esc>;
+    tapping-term-ms = <200>;
+};
+
         apos_dqt: quot_doublequot {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -360,6 +375,16 @@
             compatible = "zmk,behavior-mod-morph";
             label = "BACK_DEL";
             bindings = <&kp BACKSPACE>, <&kp DEL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+
+        spc_esc: spc_esc {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SPC_DEL";
+            bindings = <&kp SPACE>, <&kp ESC>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
