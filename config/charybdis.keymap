@@ -357,6 +357,7 @@
             keep-mods = <(MOD_RSFT)>;
         };
     };
+};
         compatible = "zmk,keymap";
 
         default {
