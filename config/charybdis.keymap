@@ -496,9 +496,9 @@
 
         sym_win {
             bindings = <
-  &kp Q  &kp W         &kp E         &kp WNB_TILDE  &kp T     &kp Y   &kp U   &kp I      &kp O    &kp O
-  &kp P  &kp WNB_BSLH  &kp WNB_PIPE  &kp WNB_SLASH  &kp F     &kp G   &kp H   &kp J      &kp K    &kp L
-  &kp Z  &kp X         &kp C         &kp V          &kp B     &kp N   &kp M   &kp COMMA  &kp DOT  &kp MINUS
+  &kp Q  &kp W         &kp E         &kp WNB_TILDE  &kp T     &kp Y   &kp U       &kp I      &kp O     &kp O
+  &kp P  &kp WNB_BSLH  &kp WNB_PIPE  &kp WNB_SLASH  &kp F     &kp G   &kp LSHIFT  &kp LCTRL  &kp LALT  &kp LGUI
+  &kp Z  &kp X         &kp C         &kp V          &kp B     &kp N   &kp M       &kp COMMA  &kp DOT   &kp MINUS
                                      &trans         &trans    &trans  &trans
             >;
 
