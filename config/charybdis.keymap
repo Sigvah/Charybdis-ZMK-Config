@@ -211,6 +211,16 @@
             bindings = <&mo 9>;
             key-positions = <18 28>;
         };
+
+        thumb_esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <30 31>;
+        };
+
+        thumb_esct2 {
+            bindings = <&kp ESCAPE>;
+            key-positions = <33 32>;
+        };
     };
 };
 
@@ -220,7 +230,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
             bindings = <&kp>, <&kp>;
 
@@ -232,7 +242,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
             bindings = <&kp>, <&kp>;
 
