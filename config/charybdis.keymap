@@ -467,9 +467,9 @@
             //         |      |     |      |     |      |    PgDN   |   PgUP  |      |
 
             bindings = <
-  &none     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none     &none  &none            &kp UP     &none     &none
-  &kp LEFT  &kp DOWN      &kp UP        &kp RIGHT     &tog 3    &none  &kp RIGHT_SHIFT  &kp LCTRL  &kp RALT  &kp LGUI
-  &kp HOME  &kp PG_DN     &kp PG_UP     &kp END       &none     &none  &kp HOME         &none      &kp END   &none
+  &none     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none     &none  &none            &kp UP     &kp C_POWER  &none
+  &kp LEFT  &kp DOWN      &kp UP        &kp RIGHT     &tog 3    &none  &kp RIGHT_SHIFT  &kp LCTRL  &kp RALT     &kp LGUI
+  &kp HOME  &kp PG_DN     &kp PG_UP     &kp END       &none     &none  &kp HOME         &none      &kp END      &none
                                         &trans        &trans    &none  &none
             >;
 
