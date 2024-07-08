@@ -228,7 +228,7 @@
     behaviors {
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
-             #binding-cells = <2>;
+            #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
@@ -241,7 +241,7 @@
 
         hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
-             #binding-cells = <2>;
+            #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
@@ -472,7 +472,7 @@
 
             bindings = <
   &none     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none     &none  &none            &kp UP     &kp C_POWER  &none
-  &kp LEFT  &kp DOWN      &kp UP        &kp RIGHT     &tog 3    &none  &kp RIGHT_SHIFT  &kp LCTRL  &kp RALT     &kp LGUI
+  &kp LEFT  &kp DOWN      &kp UP        &kp RIGHT     &tog 3    &none  &kp RIGHT_SHIFT  &kp LCTRL  &kp LALT     &kp LGUI
   &kp HOME  &kp PG_DN     &kp PG_UP     &kp END       &none     &none  &kp HOME         &none      &kp END      &none
                                         &trans        &trans    &none  &none
             >;
