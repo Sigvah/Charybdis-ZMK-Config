@@ -351,8 +351,9 @@
         };
 
         squares: squares {
-            compatible = "zmk,behavior-mod-morph";        
+            compatible = "zmk,behavior-mod-morph";
             bindings = <&kp WNB_LBKT>, <&kp WNB_RBKT>;
+
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
@@ -470,10 +471,10 @@
             //         |      |     |      |     |      |    PgDN   |   PgUP  |      |
 
             bindings = <
-  &none     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none     &none  &none            &kp UP     &kp C_POWER  &none
-  &kp LEFT  &kp DOWN      &kp UP        &kp RIGHT     &tog 3    &none  &kp RIGHT_SHIFT  &kp LCTRL  &kp LALT     &kp LGUI
-  &kp HOME  &kp PG_DN     &kp PG_UP     &kp END       &none     &none  &kp HOME         &none      &kp END      &none
-                                        &trans        &trans    &none  &none
+  &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none     &none  &none            &kp UP     &kp C_SLEEP  &none
+  &kp LEFT        &kp DOWN      &kp UP        &kp RIGHT     &tog 3    &none  &kp RIGHT_SHIFT  &kp LCTRL  &kp LALT     &kp LGUI
+  &kp HOME        &kp PG_DN     &kp PG_UP     &kp END       &none     &none  &kp HOME         &none      &kp END      &none
+                                              &trans        &trans    &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp F3 LS(F3)>;
