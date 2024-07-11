@@ -447,7 +447,7 @@
   &kp Q        &kp W        &kp F         &kp P           &kp B         &kp J        &kp L               &kp U         &kp Y        &apos_dqt_win
   &hml LGUI A  &hml LALT R  &hml LCTRL S  &hml LSHFT T    &kp G         &kp M        &hmr RIGHT_SHIFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O
   &lt 7 Z      &kp X        &kp C         &kp D           &kp V         &kp K        &kp H               &kp COMMA     &kp DOT      &kp NB_MINUS
-                                          &lt_spcesc 3 0  &blt 4 TAB    &lt 6 ENTER  &shift_layer 3 0
+                                          &lt_spcesc 3 0  &blt 4 TAB    &lt 6 ENTER  &shift_layer 4 0
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
