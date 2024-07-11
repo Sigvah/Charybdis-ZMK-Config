@@ -257,7 +257,7 @@
             bindings = <&mo>, <&sk LSHIFT>;
 
             tapping-term-ms = <200>;
-        }
+        };
 
         hmpt: homerow_mods_prefer_tap {
             compatible = "zmk,behavior-hold-tap";
